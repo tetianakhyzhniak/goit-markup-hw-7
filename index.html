@@ -24,7 +24,7 @@
         <svg class="icon-menu" width="32" height="22">
             <use class="burger" href="./img/sprite.svg#icon-burger"></use></svg>
         </button>
-<div class="menu-container js-menu-container is-open" id="mobile-menu">
+<div class="menu-container js-menu-container" id="mobile-menu">
     <button class="mobile-menu-close js-close-menu">
         <svg class="icon-menu" width="32" height="22">
         <use class="close" href="./img/sprite.svg#icon-close"></use>
@@ -42,7 +42,7 @@
         <li class="item-contacts phone"> <a href="tel:+11(000)1111111" class="contacts tel">+11 (000) 111-11-11</a></li>
         <li class="item-contacts"> <a href="mailto:info@devstudio.com" class="contacts mail">info@devstudio.com</a></li>
     </ul> </div>
-    <ul class="social-list-item">
+    <ul class="social-list-item mobile">
         <li><a href="" class="social-list-link"><svg class="social-list-icon" width="24" height="24"><use href="./img/sprite.svg#icon-instagram-1"></use></svg></a></li>
         <li><a href="" class="social-list-link"><svg class="social-list-icon" width="24" height="24"><use href="./img/sprite.svg#icon-twitter-1"></use></svg></a></li>
         <li><a href="" class="social-list-link"><svg class="social-list-icon" width="24" height="24"><use href="./img/sprite.svg#icon-facebook-1"></use></svg></a></li>
@@ -51,13 +51,13 @@
     </header>
 <main>
     <!--Hero-->
-    <!-- <section class="section hero"><div class="container">
+    <section class="section hero"><div class="container">
         <h1 class="section-title-hero">Effective Solutions for Your Business</h1>
         <button type="button" class="button-hero" data-modal-open>Order Service</button>
     </div></section>
-    <section class="section-advantage"><div class="container">  -->
+    <section class="section advantage"><div class="container"> 
         <!--section2-h2-->
-        <!-- <h2 class="visually-hidden">Advantage</h2>
+        <h2 class="visually-hidden">Advantage</h2>
         <ul class="list-advantage">
             <li class="advantage-list">
                 <div class="icon-advantage">
@@ -65,7 +65,7 @@
                     <use href="./img/sprite.svg#icon-strategy"></use>
                 </svg></div>
                 <h3 class="title">Strategy</h3>
-                <p>Our goal is to identify the business
+                <p class="advantage-text">Our goal is to identify the business
                     problem to walk away with the perfect and creative solution. </p>
             </li>
             <li class="advantage-list">
@@ -74,7 +74,7 @@
                     <use href="./img/sprite.svg#icon-punktuality"></use>
                 </svg></div>
                 <h3 class="title">Punctuality</h3>
-                <p>Bring the key message to the brand's audience for the best price within the shortest possible time.</p>
+                <p class="advantage-text">Bring the key message to the brand's audience for the best price within the shortest possible time.</p>
             </li>
             <li class="advantage-list">
                 <div class="icon-advantage">
@@ -82,7 +82,7 @@
                     <use href="./img/sprite.svg#icon-deligance"></use>
                 </svg></div>
                 <h3 class="title">Diligence</h3>
-                <p>Research and confirm brands that present the strongest digital growth opportunities and minimize risk.</p>
+                <p class="advantage-text">Research and confirm brands that present the strongest digital growth opportunities and minimize risk.</p>
             </li>
             <li class="advantage-list">
                 <div class="icon-advantage">
@@ -90,7 +90,7 @@
                     <use href="./img/sprite.svg#icon-technologies"></use>
                 </svg></div>
                 <h3 class="title">Technologies</h3>
-                <p>Design practice focused on digital experiences. We bring forth a deep passion for problem-solving.</p>
+                <p class="advantage-text">Design practice focused on digital experiences. We bring forth a deep passion for problem-solving.</p>
             </li>
         </ul></div>
     </section>
@@ -105,7 +105,11 @@
     <section class="section team"><div class="container">
         <h2 class="section-title">Our Team</h2>
         <ul class="list-item">
-            <li class="list-team"><img src="./img/komand/photo1.jpg" alt="Worker" width="264" height="260">
+            <li class="list-team"><img 
+                srcset="./img/komand/photo1.jpg 1x, ./img/komand/img1-528.jpg 2x"
+                src="./img/komand/photo1.jpg" 
+                alt="Worker"
+                width="264" height="260">
                 <div class="item-team"><h3 class="title">Mark Guerrero</h3>
                 <p class="position">Product Designer</p>
                 <ul class="social-list-item">
@@ -115,7 +119,9 @@
                     <li><a href="" class="social-list-link"><svg class="social-list-icon" width="16" height="16"><use href="./img/sprite.svg#icon-linkedin-1"></use></svg></a></li>
                 </ul></div>
             </li>
-            <li class="list-team"><img src="./img/komand/photo2.jpg" alt="Worker" width="264" height="260">
+            <li class="list-team"><img 
+                srcset="./img/komand/photo2.jpg 1x, ./img/komand/img2-528.jpg 2x"
+                src="./img/komand/photo2.jpg" alt="Worker" width="264" height="260">
                 <div class="item-team"><h3 class="title">Tom Ford</h3>
                 <p class="position">Frontend Developer</p>
                 <ul class="social-list-item">
@@ -124,7 +130,9 @@
                     <li><a href="" class="social-list-link"><svg class="social-list-icon" width="16" height="16"><use href="./img/sprite.svg#icon-facebook-1"></use></svg></a></li>
                     <li><a href="" class="social-list-link"><svg class="social-list-icon" width="16" height="16"><use href="./img/sprite.svg#icon-linkedin-1"></use></svg></a></li>
                 </ul></div></li>
-            <li class="list-team"><img src="./img/komand/photo3.jpg" alt="Worker" width="264" height="260">
+            <li class="list-team"><img
+                srcset="./img/komand/photo3.jpg 1x, ./img/komand/img3-528.jpg 2x"
+                src="./img/komand/photo3.jpg" alt="Worker" width="264" height="260">
                 <div class="item-team"><h3 class="title">Camila Garcia</h3>
                 <p class="position">Marketing</p>
                 <ul class="social-list-item">
@@ -133,7 +141,9 @@
                     <li><a href="" class="social-list-link"><svg class="social-list-icon" width="16" height="16"><use href="./img/sprite.svg#icon-facebook-1"></use></svg></a></li>
                     <li><a href="" class="social-list-link"><svg class="social-list-icon" width="16" height="16"><use href="./img/sprite.svg#icon-linkedin-1"></use></svg></a></li>
                 </ul></div></li>
-            <li class="list-team"><img src="./img/komand/photo4.jpg" alt="Worker" width="264" height="260">
+            <li class="list-team"><img 
+                srcset="./img/komand/photo4.jpg 1x, ./img/komand/img4-528.jpg 2x"
+                src="./img/komand/photo4.jpg" alt="Worker" width="264" height="260">
                 <div class="item-team"><h3 class="title">Daniel Wilson</h3>
                 <p class="position">UI Designer</p>
                 <ul class="social-list-item">
@@ -144,7 +154,7 @@
                 </ul></div></li>
         </ul></div>
     </section>
-    <section class="customers">
+    <section class="section customers"> <div class="container">
         <h2 class="section-title">Customers</h2>
         <ul class="customers-item">
             <li class="customers-list">
@@ -190,9 +200,10 @@
                 </a>
             </li>
         </ul>
+    </div>
     </section>
 </main>   
-<footer class="recommend">
+<footer class="section recommend">
     <div class="container info">
     <div class="info-footer"><a class="logo" href="#"><span class="logo-color">WEB</span>STUDIO</a>
     <p class="text-footer">Increase the flow of customers and sales for your business with digital marketing & growth solutions.</p>
@@ -210,16 +221,16 @@
     <span class="text-subscribe">Subscribe</span>
     <form class="form-subscribe" name="form-subscribe">
             <input class="subscribe-input" type="text" name="user-email" placeholder="E-mail">
-            <button type="submit" class="button-sub">Subscribe</button>
+            <button type="submit" class="button-sub">Subscribe
             <svg class="frame" width="24" height="24">
                 <use href="./img/sprite.svg#icon-frame"></use>
-            </svg>
+            </svg></button>
     </form>
 </div>
-</div></footer> -->
+</div></footer>
 
 <!-- Modal -->
-<!-- <div class="backdrop is-hidden" data-modal>
+<div class="backdrop is-hidden" data-modal>
 <div class="modal">
 <div class="modal-form">
 <form name="booking-form">
@@ -267,7 +278,7 @@
     </svg>
 </button>
 </div></div>
-<script src="./js/modal.js"></script> -->
+<script src="./js/modal.js"></script>
 <script
       defer
       src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
