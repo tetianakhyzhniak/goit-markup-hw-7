@@ -12,7 +12,6 @@
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
   />    
-<!-- <link rel="stylesheet" href="./css/styles.css"> -->
 <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
@@ -39,8 +38,8 @@
 </nav>
     <div class="list-contacts">
         <ul class="list-cont">
-        <li class="item-contacts phone"> <a href="tel:+11(000)1111111" class="contacts tel">+11 (000) 111-11-11</a></li>
         <li class="item-contacts"> <a href="mailto:info@devstudio.com" class="contacts mail">info@devstudio.com</a></li>
+        <li class="item-contacts phone"> <a href="tel:+11(000)1111111" class="contacts tel">+11 (000) 111-11-11</a></li>
     </ul> </div>
     <ul class="social-list-item mobile">
         <li><a href="" class="social-list-link"><svg class="social-list-icon" width="24" height="24"><use href="./img/sprite.svg#icon-instagram-1"></use></svg></a></li>
@@ -97,9 +96,15 @@
     <section class="section-work"><div class="container">
         <h2 class="section-title">What are we doing</h2>
         <ul class="list-work">
-            <li class="item"><img src="./img/photo1.jpg" alt="Webpage" width="360" height="300"></li>
-            <li class="item"><img src="./img/photo2.jpg" alt="Support" width="360" height="300"></li>
-            <li class="item"><img src="./img/photo3.jpg" alt="Application" width="360" height="300"></li>
+            <li class="item"><img
+                srcset="./img/work/desktop-app.jpg 1x, ./img/work/desktop-app@2x.jpg 2x"
+                src="./img/work/desktop-app.jpg" alt="Webpage" width="360" height="300"></li>
+            <li class="item"><img
+                srcset="./img/work/mobile-app.jpg 1x, ./img/work/mobile-app@2x.jpg 2x"
+                src="./img/work/mobile-app.jpg" alt="Support" width="360" height="300"></li>
+            <li class="item"><img
+                srcset="./img/work/ux-ui-design.jpg 1x, ./img/work/ux-ui-design@2x.jpg 2x"
+                src="./img/work/ux-ui-design.jpg" alt="Application" width="360" height="300"></li>
         </ul></div>
     </section>
     <section class="section team"><div class="container">
@@ -225,7 +230,7 @@
             <svg class="frame" width="24" height="24">
                 <use href="./img/sprite.svg#icon-frame"></use>
             </svg></button>
-    </form>
+        </form>
 </div>
 </div></footer>
 
