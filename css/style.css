@@ -82,6 +82,7 @@ body {
 .section-title {
   color: var(--color-title);
   font-weight: 600;
+  font-size: 36px;
   line-height: calc(40 / 36);
   letter-spacing: 0.02em;
   text-align: center;
@@ -226,17 +227,7 @@ body {
 .active {
   color: var(--color-akcent);
 }
-.site-nav.active::after {
-  content: "";
-  display: block;
-  width: 100%;
-  height: 4px;
-  background-color: var(--color-akcent);
-  border-radius: 2px;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-}
+
 .link .list {
   display: flex;
   flex-direction: column;
@@ -276,6 +267,13 @@ body {
     display: flex;
     flex-direction: column-reverse;
   }
+  .site-nav{
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .contacts.tel{
+    font-size: 36px;
+  }
 }
 /* TABLET */
 @media screen and (min-width: 768px) {
@@ -303,6 +301,17 @@ body {
     color: var(--color-text);
     line-height: 1.33;
     font-weight: 400;
+  }
+  .site-nav.active::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color: var(--color-akcent);
+    border-radius: 2px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
   }
 }
 /* DESKTOP */
@@ -399,6 +408,14 @@ body {
       ),
       url("../img/hero/hero-tablet1.jpg");
   }
+  .section-title-hero{
+    width: 492px;
+    font-weight: 500;
+    font-size: 56px;
+    line-height: 1.07;
+    margin: 0 auto;
+    margin-bottom: 40px;
+  }
 }
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2),
   screen and (min-width: 768px) and (min-resolution: 192dpi),
@@ -423,6 +440,9 @@ body {
       url("../img/hero/hero-bg-desktop.jpg");
     padding-top: 192px;
     padding-bottom: 192px;
+  }
+  .section-title-hero{
+    margin-bottom: 48px;
   }
 }
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2),
@@ -500,6 +520,15 @@ body {
 @media screen and (min-width: 768px) {
   .modal {
     width: 408px;
+  }
+}
+@media screen and (orientation:landscape){
+  .backdrop{
+    overflow: auto;
+  }
+  .modal{
+    top: 2%;
+    transform: translateX(-50%);
   }
 }
 
@@ -634,7 +663,7 @@ body {
 }
 .advantage-text {
   color: var(--color-text);
-  font-weight: 600;
+  font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
@@ -826,6 +855,7 @@ body {
 @media screen and (min-width: 768px) {
   .customers-list {
     width: calc((100% - 2 * 24px) / 3);
+    height: 88px;
   }
   .customers-item {
     row-gap: 72px;
@@ -998,6 +1028,9 @@ body {
   }
   .text-footer {
     max-width: 264px;
+  }
+  .media-text {
+    text-align: start;
   }
 }
 /* DESKTOP */
